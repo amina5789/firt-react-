@@ -1,7 +1,7 @@
 
 import './CSS.css'
 
-function Section(){
+ function Section(){
     return <section>
         <h1>WOMEN’S FASHION</h1>
         <p>Shop our new arrivals from established brands</p>
@@ -39,3 +39,4 @@ function Section(){
 }
 
 export default Section;
+ 
