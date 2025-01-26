@@ -187,7 +187,120 @@ border: none;
   } */
 
 
+/* -------------------------------------------------------- */
+
+.image{
+  width: 100%;
+  height: 580px;
+  background: url('https://s3-alpha-sig.figma.com/img/14f9/d721/6a44dd7c2ede7e9d8a191405e388ee9c?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dBjA2Lhjo9Kysb8exvvv3058xO1SK5mYlpAiNB52J1rVK~q0ingTic9P3WRSTZLjRYHzn3rZn40WkQxeE6YsrWWc--hlS10vEpFktmZe5eIlK0oEP6BNJ~r6ljJS39FE33NTD9yxic9dF1NFapPSqV9gzta21AX5MJYcwqh1zXPerg~xMaMi7N6sf5F8udJxUEwdL7jR7aeEWmaSL7D9o4bkelYFBpksTG~8R8vObfD0te~UAMI-CbGTM-IZERf-aW7Oc0xA7QXSKlAfdYnRs3gfp~MJrcTssw63H03CJWsF82XIv~wu89~HGUhmR8oXqiJC3QlLfKeQ1KjE7JkJxw__');
+background-repeat: no-repeat;
+background-size: contain;
+}
+
+
+.conteiner-div{
+  display: flex;
+  justify-content: flex-end;
+  height: 550px;
+  align-items: start;
+  gap: 20px;
+  flex-direction: column; 
+  padding-left: 120px;
+
+}
+
+
+.day{
+  font-size: 18px;
+  color: #22262A;
+}
+ 
+
+.tachen{
+  font-size: 80px;
+  color: #22262A;
+}
+
+
+.footer   {
+  background-color: #E7F5F8;
+  height: 100px;
+}
+
+.foot{
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  height: 100px;
+  font-size: 15px;
+  color: #22262A;
+}
+
+.p{
+  color:#22262A;
+  font-size: 15px;
+}
+
+.logo{
+  color: #22262A;
+  font-size: 25px;
+}
+
+.left-conteiner{
+  padding-left: 100px;
+  padding-bottom: 100px;
+  /* padding-top: 100px; */
+}
   
+.recive{
+  color:#22262A ;
+  font-size: 25px;
+}
   
+
+input{
+  background: #FFFFFF;
+  border: none;
+  width: 500px;
+  height: 40px;
+}
+
+.btnn{
+  background: #FFFFFF;
+  height: 40px;
+width: 100px;
+  border: none;
+}
   
+
+.input-conteiner{
+  background: #F2F8FC;
+  height: 606px;
+  display: flex;
+  align-items: center;
+  gap: 160px;
+}
   
+
+.right-conteiner{
+  display: flex;
+  gap: 20px;
+  align-items: end;
+  flex-direction: column; 
+padding-right: 20px;
+/* padding-top: -600px; */
+}
+
+.recive{
+  padding-right:290px;
+}
+
+
+.shop-conteiner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding-top: 20px;
+  flex-direction: row;
+}
