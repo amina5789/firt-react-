@@ -1,10 +1,19 @@
 export function Modal({ onClose }) {
     const handleSubmit = (e) => {
+        const form = e.target; 
+        const login = form.elements[0].value.trim(); 
+        const password = form.elements[1].value.trim(); 
+
+        if (login === '' || password === '') {
+            alert("Заполните все поля");
+            return;
+        }
         e.preventDefault(); 
         alert("Форма отправлена  идет проверка данных");
        
-      };
-    
+
+        
+    };
     return(
         <div className="modal">
            
