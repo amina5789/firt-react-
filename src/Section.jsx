@@ -1,4 +1,5 @@
 
+import { Counter } from './Counter';
 import './CSS.css'
 
  function Section(){
@@ -10,6 +11,7 @@ import './CSS.css'
             <p>IGURE</p>
             <figure>GREEN MUSCLE FIT POLO SHIRT</figure>
             <p>$229.00        $129.00</p>
+            <Counter />
         </figcaption>
         
 
@@ -18,6 +20,8 @@ import './CSS.css'
     <p>IGURE</p>
     <figure>GREEN MUSCLE FIT POLO SHIRT</figure>
     <p>$229.00        $129.00</p>
+    <Counter />
+
 </figcaption>
 
 
@@ -26,6 +30,7 @@ import './CSS.css'
     <p>IGURE</p>
     <figure>GREEN MUSCLE FIT POLO SHIRT</figure>
     <p>$229.00        $129.00</p>
+    <Counter />
 </figcaption>
 
 
@@ -34,6 +39,7 @@ import './CSS.css'
     <p>IGURE</p>
     <figure>GREEN MUSCLE FIT POLO SHIRT</figure>
     <p>$229.00        $129.00</p>
+    <Counter />
 </figcaption>
     </section>
 }

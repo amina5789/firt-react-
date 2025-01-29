@@ -1,4 +1,5 @@
 import './CSS.css'
+import { Counter } from './Counter';
 export function Section2({imageLink1,imageLink2,imageLink3,imageLink4}) {
     return (
         <section className='a'>
@@ -10,6 +11,8 @@ export function Section2({imageLink1,imageLink2,imageLink3,imageLink4}) {
             <p>IGURE</p>
             <figure>GREEN MUSCLE FIT POLO SHIRT</figure>
             <p>$229.00        $129.00</p>
+            <Counter />
+
         </figcaption>
 
 
@@ -18,6 +21,8 @@ export function Section2({imageLink1,imageLink2,imageLink3,imageLink4}) {
             <p>IGURE</p>
             <figure>GREEN MUSCLE FIT POLO SHIRT</figure>
             <p>$229.00        $129.00</p>
+            <Counter />
+
         </figcaption>
 
           
@@ -26,6 +31,7 @@ export function Section2({imageLink1,imageLink2,imageLink3,imageLink4}) {
             <p>IGURE</p>
             <figure>GREEN MUSCLE FIT POLO SHIRT</figure>
             <p>$229.00        $129.00</p>
+            <Counter />
         </figcaption>
 
 
@@ -35,6 +41,7 @@ export function Section2({imageLink1,imageLink2,imageLink3,imageLink4}) {
             <p>IGURE</p>
             <figure>GREEN MUSCLE FIT POLO SHIRT</figure>
             <p>$229.00        $129.00</p>
+            <Counter />
         </figcaption>
         </section>
     );

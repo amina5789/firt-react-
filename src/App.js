@@ -6,7 +6,10 @@ import Section from './Section';
 import { Section2 } from './Section2';
 import {Image} from './Image';
 import { Footer } from './Footer';
-import { Input } from './Input';
+import { Input } from './Input'
+import { useState } from 'react';
+import { Modal } from './modal';
+import { Counter } from './Counter';
 //1) компаненты  называються с заглавной буквы 
 // 2) компаненты это функции возвращающие определенную отрисовку
 //  с определенной логикой -опционально
@@ -21,12 +24,35 @@ import { Input } from './Input';
 
 
 function App() {
-  
+ 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
+
      
   return <div className="App"> 
   {/* <Welcome />
   <Button /> */}
-  <Header /> 
+  {/* <Header /> 
+   */}
+
+
+  {/* Передаём функцию handleOpenModal в Header */}
+  <Header onButtonClick={handleOpenModal} />
+      {isModalOpen && <Modal onClose={handleCloseModal} />}
+
+
+
+
+
+
   <Main />
 <Section />
 <Section2   imageLink2="https://s3-alpha-sig.figma.com/img/d042/c13a/bf9c8a8523673677fd814b8959a623c0?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bXloX9iUxnaa9JD8pVhp55NX21yFvM29nyTk~e5K9~lOO4F6zZZkFmTIcL4GWHiZXGVS3fIhir8E~uoDSRDaXjc7wb-wjSS36WRrz3AdRxMsXx6wsLVndyID--jqFJiuZ3c0aa33TEDEs3NEgIiKWaM15sJpBU47NxPfLJVE1mcf2r7nlqo0PV2uQS7LIyPjC2lXrYcI5NdHU~~m9KCsjtLqCGXw5R9bLmI8ygFUN13U5oHEUXLjI-wwQorT3ysZ6~hMQaRiWJtJA~3ncCfOsni16lRtlxaD9DXB34LQzJztGIyq3hXX~jY-pQ0CW61zdaJja8yMMlKkl2uLPJbzRQ__"
@@ -37,6 +63,9 @@ function App() {
 <Input />
 
   <Footer />
+
+  
+  {isModalOpen && <Modal onClose={handleCloseModal} />}
   </div>
   
 }

@@ -1,5 +1,6 @@
 import './CSS.css'
- function Header() {
+
+ function Header({ onButtonClick }) {
     return (
       <header className="container">
         <h1 className='logo'>YOUR LOGO</h1>
@@ -11,6 +12,9 @@ import './CSS.css'
           <li>PAGES</li>
           <li>BLOG</li>
         </ul>
+        <button className="bttn" onClick={onButtonClick}>
+        Войти
+      </button>
       </header>
     );
   }
