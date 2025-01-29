@@ -44,7 +44,6 @@ function App() {
    */}
 
 
-  {/* Передаём функцию handleOpenModal в Header */}
   <Header onButtonClick={handleOpenModal} />
       {isModalOpen && <Modal onClose={handleCloseModal} />}
 
