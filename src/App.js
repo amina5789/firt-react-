@@ -36,7 +36,6 @@ function App() {
   };
 
 
-     
   return <div className="App"> 
   {/* <Welcome />
   <Button /> */}
@@ -45,14 +44,16 @@ function App() {
 
 
   <Header onButtonClick={handleOpenModal} />
-      {isModalOpen && <Modal onClose={handleCloseModal} />}
+      {isModalOpen && <Modal onClose={handleCloseModal} isOpen={isModalOpen}  />}
 
 
 
 
 
 
-  <Main />
+
+
+  {/* <Main /> */}
 <Section />
 <Section2   imageLink2="https://s3-alpha-sig.figma.com/img/d042/c13a/bf9c8a8523673677fd814b8959a623c0?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bXloX9iUxnaa9JD8pVhp55NX21yFvM29nyTk~e5K9~lOO4F6zZZkFmTIcL4GWHiZXGVS3fIhir8E~uoDSRDaXjc7wb-wjSS36WRrz3AdRxMsXx6wsLVndyID--jqFJiuZ3c0aa33TEDEs3NEgIiKWaM15sJpBU47NxPfLJVE1mcf2r7nlqo0PV2uQS7LIyPjC2lXrYcI5NdHU~~m9KCsjtLqCGXw5R9bLmI8ygFUN13U5oHEUXLjI-wwQorT3ysZ6~hMQaRiWJtJA~3ncCfOsni16lRtlxaD9DXB34LQzJztGIyq3hXX~jY-pQ0CW61zdaJja8yMMlKkl2uLPJbzRQ__"
       imageLink1="https://s3-alpha-sig.figma.com/img/74ee/41d6/2b57673bb35b8c113a752218ef54b0f4?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=J93VXfd6sUT3ESFtWaiu-m-33tk4QySljWsEgQLVfg1KpKlwp3qRnLe5vZECVDg4aARt7-ZxihYQ81-~hXe6ARMNlKs9EHQOm3fruVOelEwbg3XUEt2xZDO8wWeABKQ4xbt1cN0hCtyZrdxDVez2TUtYjVmPPaHSeH233-0WLioDn3vwxpvqyM0NbmmlPYWyQjAYyE1PZItfXRSEVCXc6XEFxB8bcST6y1ppaIyxvQuyjIPlr9ZG8AlH3jw4KTxsi9WYWvvtof9DFKeRBkB3Z3e68~rqzjk5wGWQ7oMUT3t6Y2tPHkyi1ivNl2ScQlQzX~sOhiVmB2ifh76MdWdL3w__"
@@ -62,9 +63,6 @@ function App() {
 <Input />
 
   <Footer />
-
-  
-  {isModalOpen && <Modal onClose={handleCloseModal} />}
   </div>
   
 }
