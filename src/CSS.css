@@ -375,3 +375,9 @@ input{
   cursor: pointer;
   border-radius: 10px;
 }
+
+li:hover{
+  background-color: #22262A;
+  color: white;
+  
+}

@@ -9,7 +9,14 @@ import { Footer } from './Footer';
 import { Input } from './Input'
 import { useState } from 'react';
 import { Modal } from './modal';
-import { Counter } from './Counter';
+// import { Counter } from './Counter';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Home } from './Routes/Home';
+import { Shop } from './Routes/Shop';
+import { LOOKBOOK } from './Routes/LOOKBOOK';
+import { FEATURES } from './Routes/FEATURES';
+import { PAGES } from './Routes/PAGES';
+import { BLOG } from './Routes/BLOG';
 //1) компаненты  называються с заглавной буквы 
 // 2) компаненты это функции возвращающие определенную отрисовку
 //  с определенной логикой -опционально
@@ -25,6 +32,21 @@ import { Counter } from './Counter';
 
 function App() {
  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleOpenModal = () => {
@@ -37,13 +59,26 @@ function App() {
 
 
   return <div className="App"> 
-  {/* <Welcome />
-  <Button /> */}
-  {/* <Header /> 
-   */}
+
+<BrowserRouter>
+      < Header onButtonClick={handleOpenModal} />
+      <hr />
+        <Routes>
+           <Route path="/" element={< Home />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/lookbook" element={<LOOKBOOK/>} />
+          <Route path="/features" element={< FEATURES/>} />
+          <Route path="/PAGES" element={<PAGES />} />
+         < Route path="/BLOG" element={ <BLOG/>} />
 
 
-  <Header onButtonClick={handleOpenModal} />
+          <Route path="*" element={<h1>ТАКОЙ СТРАНИЦЫ НЕ СУЩЕСТВУЕТ</h1>}/> 
+        </Routes>
+      </BrowserRouter> 
+
+
+{/* 
+  <Header onButtonClick={handleOpenModal} /> */}
       {isModalOpen && <Modal onClose={handleCloseModal} isOpen={isModalOpen}  />}
 
 

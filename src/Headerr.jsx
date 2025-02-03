@@ -1,17 +1,57 @@
-import './CSS.css'
+import './CSS.css';
+import { NavLink } from 'react-router-dom';
+const rouse =[
+  {
+    path: "/",
+    title: 'HOME',
+  },
+  {
+    path: "/shop",
+    title: ' SHOP',
+  },
+  {
+    path: "/lookbook",
+    title: ' LOOKBOOK',
+  },
+
+  {
+    path: "/features",
+    title: ' FEATURES',
+  },
+
+  {
+    path: "/PAGES",
+    title: ' PAGES',
+  },
+{
+    path: "/BLOG",
+    title: '  BLOG',
+  },
+
+
+]
+
+
+
+
 
  function Header({ onButtonClick }) {
     return (
       <header className="container">
         <h1 className='logo'>YOUR LOGO</h1>
-        <ul>
+        {rouse.map((item, index) => (
+          <NavLink key={index} to={item.path} >
+            {item.title}
+          </NavLink>
+        ))}
+        {/* <ul>
           <li>HOME</li>
           <li>SHOP</li>
           <li>LOOKBOOK</li>
           <li>FEATURES</li>
           <li>PAGES</li>
           <li>BLOG</li>
-        </ul>
+        </ul> */}
         <button className="bttn" onClick={onButtonClick}>
         Войти
       </button>

@@ -39,6 +39,7 @@ pading: "20px",
 
 
 
+
 export function Modal({ onClose, isOpen }) {
     const handleSubmit = (e) => {
         const form = e.target; 
