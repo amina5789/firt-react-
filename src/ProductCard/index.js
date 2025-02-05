@@ -1,0 +1,1 @@
+import {ProuductDEtail } from "./ProductCard";

@@ -30,11 +30,6 @@ const rouse =[
 
 
 ]
-
-
-
-
-
  function Header({ onButtonClick }) {
     return (
       <header className="container">
