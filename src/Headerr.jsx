@@ -27,6 +27,10 @@ const rouse =[
     path: "/BLOG",
     title: '  BLOG',
   },
+  {
+    path:"/Profile",
+    title:'Profile'
+  }
 
 
 ]

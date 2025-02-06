@@ -391,12 +391,44 @@ li:hover{
 }
 
 .section-one{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 200px;
+}
+
+
+
+.section-one {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-    margin: 10px;
-    display: inline-block;
-    width: 200px;
-    background-color: #fff;
+  flex-wrap: wrap;
+  justify-content: center;  /* Центрирует элементы по горизонтали */
+  align-items: center;      /* Центрирует элементы по вертикали */
+  gap: 16px;                /* Добавляет промежутки между картинками */
+  width: 100%;
+}
+
+.product-item {
+  width: calc(25% - 16px); 
+  text-align: center;
+}
+
+
+.product-item img {
+  width: 200px;  
+  height: auto;
+  border-radius: 8px;  
+}
+
+.shop{
+  background-color: #4f6275;
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.shop:hover{
+  background-color: rgb(61, 61, 91);
 }

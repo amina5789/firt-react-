@@ -3,23 +3,26 @@ import { Counter } from './Counter';
 import './CSS.css'
 import { main } from "./mock/mock.main";
 
+
 export function Section(){
     const navigate = useNavigate();
 
     return (
     <section >
-        <h1>WOMEN’S FASHION</h1>
+        <h1>WOMEN’S FASHION and MEN’S FASHION </h1>
         <p>Shop our new arrivals from established brands</p>
         <figcaption className='section-one'>
         {main.map((product)=>{
             return <div 
-            onClick={()=>navigate(`product/${product.id}`)}>
+            onClick={()=>navigate(`product/${product.id}`)}  className="product-item">
                 <img src={product.img}  alt="" />
                 <p>{product.title}</p>
                 <p>{product.prace}</p>
             </div>
         })}
         </figcaption>
-</section>)
+</section>
+
+)
 }
  
