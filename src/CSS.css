@@ -432,3 +432,28 @@ width: 200px;
 .shop:hover{
   background-color: rgb(61, 61, 91);
 }
+.find-conteiner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.find{
+  width: 100px;
+  height: 43px;
+  border: none;
+  border-radius: 3px;
+  color: gray;
+}
+
+.find:hover{
+  background: lightblue;
+  color: white;
+}
+
+
+.find-input{
+  color: grey;
+  font-size: 18px;
+}
+

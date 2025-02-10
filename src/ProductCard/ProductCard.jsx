@@ -11,8 +11,7 @@ export function ProuducCard({ addToCart }) {
   useEffect(() => {
     if (id) {
       const product = main.find((item) => item.id === Number(id));
-      if (product) setProduct(product);
-    }
+      if (product) setProduct(product);}
   }, [id]);
 
   return (
