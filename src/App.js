@@ -60,6 +60,8 @@ function App() {
                   <Route path="/" element={<Home />} />
                   <Route path="/shop" element={<Shop cart={cart} />} />
                   <Route path="/product/:id" element={<ProuducCard addToCart={addToCart} />} />
+                  <Route path="/PAGES" element={<PAGES/>} />
+
                   <Route path="*" element={<h1>ТАКОЙ СТРАНИЦЫ НЕ СУЩЕСТВУЕТ</h1>} />
               </Routes>
           </BrowserRouter>
