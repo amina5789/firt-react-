@@ -2,16 +2,16 @@ import { useRef, useState } from "react";
 import VideoPlayer from './video.mp4';
 
 export function Video() {
-  const [btn1, setBtn] = useState("Воспроизвести"); // Состояние для текста на кнопке
-  const videoRef = useRef(null); // Создаем ссылку на видео
+  const [btn1, setBtn] = useState("Воспроизвести"); 
+  const videoRef = useRef(null); 
 
   const startTime = () => {
     if (videoRef.current.paused) {
-      videoRef.current.play();  // Воспроизведение видео
-      setBtn("Пауза"); // Меняем текст на кнопке
+      videoRef.current.play();  
+      setBtn("Пауза"); 
     } else {
-      videoRef.current.pause(); // Пауза
-      setBtn("Воспроизвести"); // Меняем текст на кнопке
+      videoRef.current.pause(); 
+      setBtn("Воспроизвести"); 
     }
   };
 
@@ -23,7 +23,7 @@ export function Video() {
         <source src={VideoPlayer} />
       </video>
       <br />
-      <button onClick={startTime}>{btn1}</button> {/* Меняем текст на кнопке */}
+      <button onClick={startTime}>{btn1}</button> 
     </div>
   );
 }
